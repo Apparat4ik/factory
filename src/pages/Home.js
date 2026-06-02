@@ -40,7 +40,7 @@ const Home = () => {
             <table border="1" cellPadding="10" style={{ borderCollapse: 'collapse', width: '100%', textAlign: 'left' }}>
                 <thead style={{ backgroundColor: '#f2f2f2' }}>
                     <tr>
-                        <th>ID</th>
+                        {/* Удалили <th>ID</th> */}
                         <th>Описание нарушения</th>
                         <th>Уровень угрозы</th>
                         <th>Статус</th>
@@ -50,7 +50,7 @@ const Home = () => {
                 <tbody>
                     {incidents.map(item => (
                         <tr key={item.id}>
-                            <td>{item.id}</td>
+                            {/* Удалили <td>{item.id}</td> */}
                             <td>{item.title}</td>
                             <td>
                                 <strong style={{ color: item.severity === 'Критический' ? 'red' : 'inherit' }}>
